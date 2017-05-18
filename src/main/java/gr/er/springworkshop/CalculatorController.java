@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class CalculatorController {
     @RequestMapping("/sum")
     String sum(@RequestParam("a") Integer a, @RequestParam("b") Integer b) {
-        return String.valueOf(a + b);
+        return String.valueOf(a + b + 1);
     }
 }
