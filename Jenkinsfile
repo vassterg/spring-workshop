@@ -24,5 +24,10 @@ pipeline {
                 sh 'docker build -t vasster/workshop .'
             }
         }
+        stage('Push to registry') {
+            steps {
+                sh 'docker push -t localhost:5000/workshop '
+            }
+        }
     }
 }
