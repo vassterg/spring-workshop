@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Dockerize') {
             steps {
-                sh './docker build -t vasster/workshop .'
+                sh 'docker build -t vasster/workshop .'
             }
         }
     }
