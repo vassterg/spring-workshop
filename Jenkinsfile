@@ -19,5 +19,10 @@ pipeline {
                 sh './mvnw package'
             }
         }
+        stage('Dockerize') {
+            steps {
+                sh './docker build -t vasster/workshop .'
+            }
+        }
     }
 }
