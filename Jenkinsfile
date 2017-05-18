@@ -21,12 +21,12 @@ pipeline {
         }
         stage('Dockerize') {
             steps {
-                sh 'docker build -t vasster/workshop .'
+                sh 'docker build -t localhost:5000/workshop .'
             }
         }
         stage('Push to registry') {
             steps {
-                sh 'docker push -t localhost:5000/workshop '
+                sh 'docker push localhost:5000/workshop'
             }
         }
     }
