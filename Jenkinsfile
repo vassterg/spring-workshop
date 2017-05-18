@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                sh 'mvnw compile'
+                sh './mvnw compile'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvnw test'
+                sh './mvnw test'
             }
         }
         stage('Build') {
             steps {
-                sh 'mvnw package'
+                sh './mvnw package'
             }
         }
     }
