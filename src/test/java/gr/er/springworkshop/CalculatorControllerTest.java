@@ -29,5 +29,17 @@ public class CalculatorControllerTest {
         assertEquals("3", result);
     }
 
+    @Test
+    public void failsumTwoElements() {
+        // given
+        int a = 1;
+        int b = 2;
+
+        // when
+        String result = calculator.sum(a, b);
+
+        // then
+        assertEquals("3 ", result);
+    }
     
 }
