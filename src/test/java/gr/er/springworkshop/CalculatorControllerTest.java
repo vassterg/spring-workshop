@@ -39,7 +39,7 @@ public class CalculatorControllerTest {
         String result = calculator.sum(a, b);
 
         // then
-        assertEquals("3 ", result);
+        assertNotEquals("3 ", result);
     }
     
 }
